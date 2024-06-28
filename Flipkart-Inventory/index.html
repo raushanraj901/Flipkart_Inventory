@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Inventory Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Inventory Management</h1>
+      <nav>
+        <ul id="category-nav">
+          <!-- Dropdown for categories -->
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Categories</a>
+            <div class="dropdown-content">
+              <a href="#trousers">Trousers</a>
+              <a href="#shoes">Shoes</a>
+              <a href="#t-shirts">T-shirts</a>
+              <!-- Add more categories as needed -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="trousers" class="category-page">
+        <div class="category-header">
+          <h2>Trousers</h2>
+          <form id="trousers-form" class="product-form">
+            <input
+              type="text"
+              id="trousers-input"
+              class="product-input"
+              placeholder="Enter product name"
+            />
+            <button type="submit" class="add-btn">Add Product</button>
+          </form>
+        </div>
+        <div id="trousers-list" class="product-list"></div>
+      </section>
+
+      <section id="shoes" class="category-page">
+        <div class="category-header">
+          <h2>Shoes</h2>
+          <form id="shoes-form" class="product-form">
+            <input
+              type="text"
+              id="shoes-input"
+              class="product-input"
+              placeholder="Enter product name"
+            />
+            <button type="submit" class="add-btn">Add Product</button>
+          </form>
+        </div>
+        <div id="shoes-list" class="product-list"></div>
+      </section>
+
+      <section id="t-shirts" class="category-page">
+        <div class="category-header">
+          <h2>T-shirts</h2>
+          <form id="t-shirts-form" class="product-form">
+            <input
+              type="text"
+              id="t-shirts-input"
+              class="product-input"
+              placeholder="Enter product name"
+            />
+            <button type="submit" class="add-btn">Add Product</button>
+          </form>
+        </div>
+        <div id="t-shirts-list" class="product-list"></div>
+      </section>
+      <!-- Add more sections for additional categories -->
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
